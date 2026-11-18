@@ -1,4 +1,10 @@
-# 🔥 PORTIX — Premium .NET Software Engineer Portfolio
+# 🔥 Sai Pavan — Premium .NET Software Engineer Portfolio
+
+[![Live Site](https://img.shields.io/badge/Live_Portfolio-saipavan1013.github.io%2Fportfolio-E85D36?style=for-the-badge&logo=googlechrome&logoColor=white)](https://saipavan1013.github.io/portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-saipavan1013-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/saipavan1013)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+> 🌐 **Live Website Link**: [https://saipavan1013.github.io/portfolio/](https://saipavan1013.github.io/portfolio/)
 
 A premium, recruiter-optimized software developer portfolio for an **Associate / Mid-level .NET Backend Engineer (1.5+ Years Experience)**. Built with modern semantic **HTML5**, **CSS3 (Custom Properties & Flex/Grid)**, and vanilla **JavaScript (ES6+)** — zero framework bloat, lightning fast, and 100% responsive.
 
