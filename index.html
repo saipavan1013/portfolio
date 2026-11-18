@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Pavan — Associate & Mid-Level .NET Software Engineer Portfolio. Production-ready ASP.NET Core 8 Web APIs, Clean Architecture, Microservices, EF Core, and Azure." />
+  <meta name="keywords" content=".NET Developer, C#, ASP.NET Core, Sai Pavan, Software Engineer, Clean Architecture, REST API, Microservices, Azure, Docker, SQL Server" />
+  <meta name="author" content="Sai Pavan | .NET Software Engineer" />
+  <meta name="theme-color" content="#121212" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-portfolio-url.example.com/" />
+  <meta property="og:title" content="Sai Pavan &bull; .NET Software Engineer Portfolio" />
+  <meta property="og:description" content="Production-ready ASP.NET Core 8 Web APIs, Clean Architecture, Event-Driven Microservices, EF Core, and Azure Cloud." />
+  <meta property="og:image" content="assets/og-preview.png" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sai Pavan &bull; .NET Software Engineer Portfolio" />
+  <meta name="twitter:description" content="Scalable ASP.NET Core 8 APIs, Clean Architecture, Microservices, and Azure Cloud solutions." />
+  <meta name="twitter:image" content="assets/og-preview.png" />
+
+  <!-- Branded SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121212'/%3E%3Crect x='6' y='6' width='8' height='8' rx='2' fill='%23e85d36'/%3E%3Ctext x='16' y='24' font-family='sans-serif' font-weight='900' font-size='18' fill='%23ffffff'%3EP%3C/text%3E%3C/svg%3E" />
+
+  <title>Sai Pavan &bull; .NET Software Engineer Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Reading / Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Glow Follower (Desktop only) -->
+  <div class="ambient-cursor-glow" id="ambient-cursor-glow" aria-hidden="true"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="portix-header">
+    <div class="container header-container">
+      <!-- Logo & Scroll-Docked Profile Avatar -->
+      <a href="#hero" class="brand-logo" id="header-brand-logo" aria-label="Sai Pavan Portfolio Home">
+        <div class="nav-profile-slot" id="nav-profile-slot" aria-hidden="true">
+          <div class="nav-profile-avatar" id="nav-profile-avatar">
+            <img src="" alt="Sai Pavan" class="nav-avatar-photo" id="nav-avatar-photo" style="display: none;" />
+            <div class="nav-avatar-fallback" id="nav-avatar-fallback">
+              <span class="nav-fallback-initial">P</span>
+            </div>
+          </div>
+        </div>
+        <span class="logo-text">PAVAN</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Center Nav Links -->
+      <nav class="center-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#works" class="nav-item">WORKS</a></li>
+          <li><a href="#skills" class="nav-item">SKILLS</a></li>
+          <li><a href="#about" class="nav-item">ABOUT</a></li>
+          <li><a href="#experience" class="nav-item">EXPERIENCE</a></li>
+          <li><a href="#education" class="nav-item">EDUCATION</a></li>
+          <li><a href="#contact" class="nav-item">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action: Portix Signature [->] LET'S TALK Button -->
+      <div class="header-right">
+        <a href="#contact" class="btn-talk magnetic-btn" aria-label="Let's Talk">
+          <span class="btn-talk-arrow">&rarr;</span>
+          <span class="btn-talk-label">LET'S TALK</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-dropdown">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-dropdown" id="mobile-dropdown">
+      <a href="#works" class="mobile-nav-link">WORKS</a>
+      <a href="#skills" class="mobile-nav-link">SKILLS</a>
+      <a href="#about" class="mobile-nav-link">ABOUT</a>
+      <a href="#experience" class="mobile-nav-link">EXPERIENCE</a>
+      <a href="#education" class="mobile-nav-link">EDUCATION</a>
+      <a href="#exploring" class="mobile-nav-link">EXPLORING</a>
+      <a href="#contact" class="mobile-nav-link">CONTACT</a>
+      <a href="#contact" class="btn-talk mobile-talk">
+        <span class="btn-talk-arrow">&rarr;</span>
+        <span class="btn-talk-label">LET'S TALK</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Flying Profile Avatar Clone Portal for Scroll-driven FLIP Flight to Navbar -->
+  <div class="flying-profile-clone" id="flying-profile-clone" aria-hidden="true"></div>
+
+  <main id="main-content">
+    
+    <!-- ========================================================
+         HERO SECTION
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Left Side: Role Tag & Bold Multiline Statement -->
+        <div class="hero-left" data-reveal="fade-up">
+          
+          <!-- Role Tag with Status Indicator -->
+          <div class="hero-role-tag" data-reveal="fade-up" data-reveal-delay="1">
+            <span class="orange-square">■</span>
+            <span class="role-text">.NET SOFTWARE ENGINEER</span>
+            <span class="role-badge-status">
+              <span class="status-pulse-dot"></span>
+              <span>Available for Hire</span>
+            </span>
+          </div>
+
+          <!-- Hero Greeting -->
+          <div class="hero-greeting" data-reveal="fade-up" data-reveal-delay="1">
+            <span class="greeting-prefix">Hi, I'm</span>
+            <span class="greeting-name">Sai Pavan</span>
+          </div>
+
+          <!-- Multiline Typography -->
+          <h1 class="hero-headline" data-reveal="fade-up" data-reveal-delay="2">
+            <span class="line-solid">ENGINEERING THAT</span>
+            <span class="line-gradient">SCALES RESILIENT</span>
+            <span class="line-muted">SYSTEMS.</span>
+          </h1>
+
+          <p class="hero-subtext" data-reveal="fade-up" data-reveal-delay="3">
+            Associate / Mid-level <strong>.NET Backend Developer</strong> with 1.5+ years of production experience architecting scalable <strong>ASP.NET Core 8 Web APIs</strong>, event-driven microservices, <strong>EF Core</strong> databases, and cloud-native deployments on <strong>Microsoft Azure</strong>.
+          </p>
+
+          <!-- Primary CTA & Social Group -->
+          <div class="hero-actions-container" data-reveal="fade-up" data-reveal-delay="4">
+            <div class="hero-cta-group">
+              <a href="#works" class="btn-primary magnetic-btn">
+                <span>EXPLORE WORKS</span>
+                <span class="arrow">&nearr;</span>
+              </a>
+              <button type="button" onclick="openResumeModal()" class="btn-secondary magnetic-btn">
+                <span>VIEW RESUME</span>
+              </button>
+            </div>
+
+            <!-- Professional Social Links with SVGs -->
+            <div class="hero-socials-group" aria-label="Social Profiles">
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="hero-social-btn magnetic-btn" title="GitHub Profile" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="hero-social-btn magnetic-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="#contact" class="hero-social-btn magnetic-btn" title="Email Direct" aria-label="Contact">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Glowing Sun Radial Circle, Developer Stage & Floating Dev Badges -->
+        <div class="hero-right" data-reveal="fade-left" data-reveal-delay="2">
+          <div class="portrait-stage">
+            <!-- Glowing Orange Radial Sun -->
+            <div class="orange-sun-circle" id="hero-sun" aria-hidden="true"></div>
+
+            <!-- Floating Software Development Decorative Badges -->
+            <div class="floating-dev-badge badge-top-right magnetic-btn" aria-hidden="true">
+              <span class="badge-icon">&lt;/&gt;</span>
+              <span class="badge-text">C# 12 &bull; .NET 8</span>
+            </div>
+            <div class="floating-dev-badge badge-mid-left magnetic-btn" aria-hidden="true">
+              <span class="badge-icon">&#x2601;</span>
+              <span class="badge-text">Azure Cloud</span>
+            </div>
+            <div class="floating-dev-badge badge-bottom-right magnetic-btn" aria-hidden="true">
+              <span class="badge-icon">&#x25C6;</span>
+              <span class="badge-text">Clean CQRS</span>
+            </div>
+
+            <!-- Person Portrait Wrapper (Circular Glowing Frame matching Veera Bharath reference) -->
+            <div class="person-wrapper" id="person-stage">
+              <div class="hero-profile-circle interactive-card" id="hero-profile-avatar">
+                <!-- Fallback Silhouette & Monogram when no custom image is loaded -->
+                <div class="hero-avatar-fallback" id="hero-avatar-fallback">
+                  <div class="avatar-fallback-silhouette">
+                    <svg viewBox="0 0 200 220" fill="none" class="avatar-silhouette-svg" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="100" cy="70" r="42" fill="rgba(255, 255, 255, 0.12)" stroke="rgba(232, 93, 54, 0.4)" stroke-width="1.5" stroke-dasharray="4 4" />
+                      <path d="M25 210C25 150 60 135 100 135C140 135 175 150 175 210" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(232, 93, 54, 0.35)" stroke-width="1.5" stroke-dasharray="4 4" />
+                    </svg>
+                  </div>
+                  <div class="avatar-fallback-badge">
+                    <span class="avatar-fallback-initial">P</span>
+                    <span class="avatar-fallback-text">SAI PAVAN</span>
+                  </div>
+                  <span class="avatar-fallback-upload-hint">assets/hero-person.png</span>
+                </div>
+
+                <!-- Ready for User Photo (smoothly displayed if src provided) -->
+                <img 
+                  src="" 
+                  alt="Sai Pavan - .NET Software Engineer"
+                  class="hero-avatar-img"
+                  id="hero-person-img"
+                  style="display: none;"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Signature Floating Orange Circular Sticker -->
+            <a href="#contact" class="hire-sticker magnetic-btn" title="Click to get in touch">
+              <span class="sticker-text">HIRE ME NOW</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Giant Name Backdrop Watermark (Behind Content, Zero Collision) -->
+      <div class="giant-name-backdrop" id="hero-giant-name" aria-hidden="true">
+        <span class="giant-name-text">SAI PAVAN</span>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="container">
+        <div class="metrics-bar interactive-card" data-reveal="fade-up" data-reveal-delay="3">
+          <div class="metric-item">
+            <span class="metric-number" data-counter="1.5" data-counter-decimals="1" data-counter-suffix="+">1.5+</span>
+            <span class="metric-label">Years Production Exp</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-counter="15" data-counter-suffix="+">15+</span>
+            <span class="metric-label">Microservices &amp; REST APIs</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-counter="100" data-counter-prefix="Sub-" data-counter-suffix="ms">Sub-100ms</span>
+            <span class="metric-label">Optimized Query Latency</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-counter="99.9" data-counter-decimals="1" data-counter-suffix="%">99.9%</span>
+            <span class="metric-label">Clean Code &amp; Test Mindset</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         SELECTED WORKS (INTERACTIVE STACKING CARDS DECK)
+         ======================================================== -->
+    <section class="section section-works" id="works">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>PORTFOLIO SHOWCASE</span>
+          </div>
+          <h2 class="section-heading">SELECTED WORKS</h2>
+          <p class="section-description">
+            Scroll down to see the case studies stack like a deck of cards. Scroll up and they peel away.
+          </p>
+        </div>
+
+        <!-- Stacking Cards Deck Container -->
+        <div class="stacking-cards-container" id="stacking-cards-deck">
+          
+          <!-- Stack Card 01: Zentix Core -->
+          <article class="stack-card interactive-card" id="work-card-0" data-card-index="0" style="--card-index: 0;">
+            <div class="stack-card-inner">
+              <div class="stack-card-content">
+                <div class="work-card-top">
+                  <span class="work-num">01 / CASE STUDY</span>
+                  <span class="work-tag">Backend &bull; Microservices</span>
+                </div>
+
+                <h3 class="work-title">[Zentix] E-Commerce Core &amp; Distributed Order Engine</h3>
+                
+                <p class="work-desc">
+                  High-throughput distributed order placement and payment orchestration engine built on <strong>ASP.NET Core 8</strong>, <strong>MediatR (CQRS)</strong>, and <strong>RabbitMQ</strong>. Employs the Transactional Outbox pattern to guarantee idempotency and zero lost checkout events.
+                </p>
+
+                <div class="work-highlights">
+                  <div>&bull; RabbitMQ event bus with Dead-Letter Queues for resilient asynchronous order flows.</div>
+                  <div>&bull; Redis distributed caching reducing catalog query load by 45%.</div>
+                  <div>&bull; Docker Compose multi-container setup (API, SQL Server, Redis, RabbitMQ).</div>
+                </div>
+
+                <div class="work-tech-tags">
+                  <span>.NET 8</span>
+                  <span>C# 12</span>
+                  <span>MediatR</span>
+                  <span>RabbitMQ</span>
+                  <span>EF Core</span>
+                  <span>SQL Server</span>
+                  <span>Redis</span>
+                  <span>Docker</span>
+                </div>
+
+                <div class="work-actions">
+                  <button type="button" class="btn-card-primary magnetic-btn" onclick="openProjectModal('project-1')">
+                    <span>ARCHITECTURE DETAILS</span>
+                    <span class="arrow">&nearr;</span>
+                  </button>
+                  <a href="https://github.com/your-username/zentix-microservices" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>GITHUB REPO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://zentix-demo.your-domain.com/swagger" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>LIVE DEMO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Visual Accent Box with Radar Pulse & Metrics -->
+              <div class="stack-card-preview">
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="45" data-counter-suffix="%">45%</span>
+                  <span class="metric-txt">DB Load Reduction</span>
+                </div>
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="85" data-counter-prefix="&lt; " data-counter-suffix="ms">&lt; 85ms</span>
+                  <span class="metric-txt">Checkout Latency</span>
+                </div>
+                <div class="preview-badge-status">
+                  <span class="status-dot-active"></span>
+                  <span>Event Bus Idempotent</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stack Card 02: Lumio Analytics -->
+          <article class="stack-card interactive-card" id="work-card-1" data-card-index="1" style="--card-index: 1;">
+            <div class="stack-card-inner">
+              <div class="stack-card-content">
+                <div class="work-card-top">
+                  <span class="work-num">02 / CASE STUDY</span>
+                  <span class="work-tag">SaaS &bull; Financial Analytics</span>
+                </div>
+
+                <h3 class="work-title">[Lumio] Multi-Tenant SaaS Financial Analytics API</h3>
+                
+                <p class="work-desc">
+                  Secure multi-tenant SaaS REST API built for automated subscription billing cycles and instant balance-sheet generation. Implements a <strong>hybrid ORM architecture</strong>: <strong>Entity Framework Core</strong> for transactional writes and <strong>Dapper</strong> for high-speed read queries.
+                </p>
+
+                <div class="work-highlights">
+                  <div>&bull; Strict tenant data isolation via dynamic database schema resolution &amp; global query filters.</div>
+                  <div>&bull; JWT authentication with custom claims-based permissions and RBAC access policies.</div>
+                  <div>&bull; Hangfire automated worker instances executing invoice generation and reconciliation routines.</div>
+                </div>
+
+                <div class="work-tech-tags">
+                  <span>ASP.NET Core</span>
+                  <span>PostgreSQL</span>
+                  <span>Dapper</span>
+                  <span>EF Core</span>
+                  <span>Hangfire</span>
+                  <span>JWT Auth</span>
+                  <span>xUnit</span>
+                </div>
+
+                <div class="work-actions">
+                  <button type="button" class="btn-card-primary magnetic-btn" onclick="openProjectModal('project-2')">
+                    <span>ARCHITECTURE DETAILS</span>
+                    <span class="arrow">&nearr;</span>
+                  </button>
+                  <a href="https://github.com/your-username/lumio-financial-saas" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>GITHUB REPO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://lumio-demo.your-domain.com" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>LIVE DEMO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Visual Accent Box -->
+              <div class="stack-card-preview">
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="10" data-counter-suffix="x">10x</span>
+                  <span class="metric-txt">Faster Query Speed</span>
+                </div>
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="100" data-counter-suffix="%">100%</span>
+                  <span class="metric-txt">Tenant Data Isolation</span>
+                </div>
+                <div class="preview-badge-status">
+                  <span class="status-dot-active"></span>
+                  <span>Multi-Tenant Active</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stack Card 03: Arkeo Telemetry -->
+          <article class="stack-card interactive-card" id="work-card-2" data-card-index="2" style="--card-index: 2;">
+            <div class="stack-card-inner">
+              <div class="stack-card-content">
+                <div class="work-card-top">
+                  <span class="work-num">03 / CASE STUDY</span>
+                  <span class="work-tag">Full Stack &bull; Real-Time WebSockets</span>
+                </div>
+
+                <h3 class="work-title">[Arkeo] Real-Time Logistics &amp; Fleet Telemetry Hub</h3>
+                
+                <p class="work-desc">
+                  Live asset telemetry and driver status monitoring platform. Built using <strong>ASP.NET Core SignalR</strong> for bidirectional WebSocket streaming, connected to an interactive <strong>Blazor WebAssembly</strong> frontend executing native C# code in the client browser.
+                </p>
+
+                <div class="work-highlights">
+                  <div>&bull; Real-time GPS coordinate streaming with SignalR Hubs and auto-fallback to SSE.</div>
+                  <div>&bull; Client-side connection resilience featuring automated exponential backoff reconnection.</div>
+                  <div>&bull; Structured telemetry ingestion with Serilog piped into a centralized Seq dashboard.</div>
+                </div>
+
+                <div class="work-tech-tags">
+                  <span>SignalR</span>
+                  <span>Blazor WASM</span>
+                  <span>C# 12</span>
+                  <span>EF Core</span>
+                  <span>WebSockets</span>
+                  <span>Serilog</span>
+                  <span>Leaflet</span>
+                </div>
+
+                <div class="work-actions">
+                  <button type="button" class="btn-card-primary magnetic-btn" onclick="openProjectModal('project-3')">
+                    <span>ARCHITECTURE DETAILS</span>
+                    <span class="arrow">&nearr;</span>
+                  </button>
+                  <a href="https://github.com/your-username/arkeo-fleet-telemetry" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>GITHUB REPO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://arkeo-demo.your-domain.com" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>LIVE DEMO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Visual Accent Box -->
+              <div class="stack-card-preview">
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="50" data-counter-prefix="&lt; " data-counter-suffix="ms">&lt; 50ms</span>
+                  <span class="metric-txt">Stream Latency</span>
+                </div>
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="10" data-counter-suffix="k+">10k+</span>
+                  <span class="metric-txt">Telemetry Packets / sec</span>
+                </div>
+                <div class="preview-badge-status">
+                  <span class="status-dot-active"></span>
+                  <span>WebSocket Streaming</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stack Card 04: Novu Template -->
+          <article class="stack-card interactive-card" id="work-card-3" data-card-index="3" style="--card-index: 3;">
+            <div class="stack-card-inner">
+              <div class="stack-card-content">
+                <div class="work-card-top">
+                  <span class="work-num">04 / CASE STUDY</span>
+                  <span class="work-tag">Enterprise Template &bull; Open Source</span>
+                </div>
+
+                <h3 class="work-title">[Novu] Modular Clean Architecture Starter Template</h3>
+                
+                <p class="work-desc">
+                  Production-ready, opinionated boilerplate adhering to Clean Architecture and Domain-Driven Design principles. Configured with MediatR CQRS, Result/Error pattern, RFC 7807 ProblemDetails middleware, Swagger OpenAPI, and automated CI/CD pipelines.
+                </p>
+
+                <div class="work-highlights">
+                  <div>&bull; Strict 4-layer separation of concerns: Domain, Application, Infrastructure, and API.</div>
+                  <div>&bull; Functional Result pattern eliminating unhandled business rule exceptions.</div>
+                  <div>&bull; GitHub Actions automated test suite execution (xUnit) and automated Docker Hub image pushes.</div>
+                </div>
+
+                <div class="work-tech-tags">
+                  <span>Clean Architecture</span>
+                  <span>.NET 8</span>
+                  <span>MediatR</span>
+                  <span>FluentValidation</span>
+                  <span>xUnit</span>
+                  <span>CI/CD</span>
+                  <span>Docker</span>
+                </div>
+
+                <div class="work-actions">
+                  <button type="button" class="btn-card-primary magnetic-btn" onclick="openProjectModal('project-4')">
+                    <span>ARCHITECTURE DETAILS</span>
+                    <span class="arrow">&nearr;</span>
+                  </button>
+                  <a href="https://github.com/your-username/novu-clean-architecture" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>GITHUB REPO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://github.com/your-username/novu-clean-architecture#readme" target="_blank" rel="noopener noreferrer" class="btn-card-ghost magnetic-btn">
+                    <span>LIVE DEMO</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Visual Accent Box -->
+              <div class="stack-card-preview">
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="100" data-counter-suffix="%">100%</span>
+                  <span class="metric-txt">Pure Domain Isolation</span>
+                </div>
+                <div class="preview-metric-box">
+                  <span class="metric-val" data-counter="85" data-counter-suffix="%+">85%+</span>
+                  <span class="metric-txt">Automated Test Coverage</span>
+                </div>
+                <div class="preview-badge-status">
+                  <span class="status-dot-active"></span>
+                  <span>CI/CD Passing</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         TECHNICAL SKILLS SECTION (8 CATEGORIES - NO ARBITRARY BARS)
+         ======================================================== -->
+    <section class="section section-skills" id="skills">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>CAPABILITIES &amp; EXPERTISE</span>
+          </div>
+          <h2 class="section-heading">TECHNICAL SKILLS</h2>
+          <p class="section-description">
+            Production-tested engineering competencies across backend architecture, cloud infrastructure, relational databases, and enterprise testing standards.
+          </p>
+        </div>
+
+        <div class="skills-catalog-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="1">
+            <div class="category-header">
+              <span class="cat-icon">&#123; &#125;</span>
+              <h3 class="cat-title">Programming Languages</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>C# 12 / 11</span>
+              <span class="skill-pill active"><span class="dot"></span>SQL (T-SQL, PL/pgSQL)</span>
+              <span class="skill-pill"><span class="dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-pill"><span class="dot"></span>TypeScript</span>
+              <span class="skill-pill"><span class="dot"></span>HTML5 &amp; CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend Development -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="2">
+            <div class="category-header">
+              <span class="cat-icon">&#9881;</span>
+              <h3 class="cat-title">Backend Development</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>ASP.NET Core 8</span>
+              <span class="skill-pill active"><span class="dot"></span>RESTful Web APIs</span>
+              <span class="skill-pill"><span class="dot"></span>Minimal APIs</span>
+              <span class="skill-pill active"><span class="dot"></span>Entity Framework Core</span>
+              <span class="skill-pill"><span class="dot"></span>Dapper Micro-ORM</span>
+              <span class="skill-pill"><span class="dot"></span>LINQ Expressions</span>
+              <span class="skill-pill"><span class="dot"></span>SignalR Hubs</span>
+              <span class="skill-pill"><span class="dot"></span>Hangfire Jobs</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Architecture & Design Patterns -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="3">
+            <div class="category-header">
+              <span class="cat-icon">&#9638;</span>
+              <h3 class="cat-title">Architecture &amp; Design</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>Clean Architecture</span>
+              <span class="skill-pill active"><span class="dot"></span>CQRS (MediatR)</span>
+              <span class="skill-pill"><span class="dot"></span>SOLID Principles</span>
+              <span class="skill-pill"><span class="dot"></span>Domain-Driven Design (DDD)</span>
+              <span class="skill-pill"><span class="dot"></span>Result / Error Pattern</span>
+              <span class="skill-pill"><span class="dot"></span>Transactional Outbox</span>
+              <span class="skill-pill"><span class="dot"></span>Repository &amp; Unit of Work</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & Caching -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="4">
+            <div class="category-header">
+              <span class="cat-icon">&#9883;</span>
+              <h3 class="cat-title">Databases &amp; Caching</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>Microsoft SQL Server</span>
+              <span class="skill-pill active"><span class="dot"></span>PostgreSQL</span>
+              <span class="skill-pill active"><span class="dot"></span>Redis Distributed Cache</span>
+              <span class="skill-pill"><span class="dot"></span>Execution Plan Profiling</span>
+              <span class="skill-pill"><span class="dot"></span>Indexing Strategies</span>
+              <span class="skill-pill"><span class="dot"></span>Database Migrations</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Cloud & DevOps -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="1">
+            <div class="category-header">
+              <span class="cat-icon">&#9729;</span>
+              <h3 class="cat-title">Cloud &amp; DevOps</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>Microsoft Azure (App Services)</span>
+              <span class="skill-pill active"><span class="dot"></span>Azure SQL Database</span>
+              <span class="skill-pill active"><span class="dot"></span>Docker Multi-Stage Builds</span>
+              <span class="skill-pill"><span class="dot"></span>GitHub Actions CI/CD</span>
+              <span class="skill-pill"><span class="dot"></span>Azure Blob Storage</span>
+              <span class="skill-pill"><span class="dot"></span>Linux Containers</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Frontend Development -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="2">
+            <div class="category-header">
+              <span class="cat-icon">&#9635;</span>
+              <h3 class="cat-title">Frontend Development</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>Blazor WebAssembly</span>
+              <span class="skill-pill"><span class="dot"></span>Razor Components</span>
+              <span class="skill-pill"><span class="dot"></span>Vanilla JavaScript (ES6+)</span>
+              <span class="skill-pill"><span class="dot"></span>Modern Semantic HTML5</span>
+              <span class="skill-pill"><span class="dot"></span>CSS3 Flexbox &amp; Grid</span>
+              <span class="skill-pill"><span class="dot"></span>Responsive Web Layouts</span>
+            </div>
+          </div>
+
+          <!-- Category 7: Testing & Quality Assurance -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="3">
+            <div class="category-header">
+              <span class="cat-icon">&#10003;</span>
+              <h3 class="cat-title">Testing &amp; QA</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>xUnit Test Runner</span>
+              <span class="skill-pill active"><span class="dot"></span>Moq Mocking Framework</span>
+              <span class="skill-pill"><span class="dot"></span>FluentAssertions</span>
+              <span class="skill-pill"><span class="dot"></span>WebApplicationFactory</span>
+              <span class="skill-pill"><span class="dot"></span>Integration Testing</span>
+              <span class="skill-pill"><span class="dot"></span>Test-Driven Mindset</span>
+            </div>
+          </div>
+
+          <!-- Category 8: Development Tools -->
+          <div class="skill-category-card interactive-card" data-reveal="fade-up" data-reveal-delay="4">
+            <div class="category-header">
+              <span class="cat-icon">&#128295;</span>
+              <h3 class="cat-title">Development Tools</h3>
+            </div>
+            <div class="skills-pill-group">
+              <span class="skill-pill active"><span class="dot"></span>Visual Studio 2022</span>
+              <span class="skill-pill active"><span class="dot"></span>Visual Studio Code</span>
+              <span class="skill-pill"><span class="dot"></span>Git &amp; GitHub</span>
+              <span class="skill-pill"><span class="dot"></span>Postman &amp; Swagger/OpenAPI</span>
+              <span class="skill-pill"><span class="dot"></span>Docker Desktop</span>
+              <span class="skill-pill"><span class="dot"></span>Serilog / Seq Telemetry</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         ABOUT ME SECTION
+         ======================================================== -->
+    <section class="section section-about" id="about">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>ENGINEERING PHILOSOPHY</span>
+          </div>
+          <h2 class="section-heading">ABOUT ME</h2>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative & Approach -->
+          <div class="about-card interactive-card" data-reveal="fade-right">
+            <h3 class="about-heading">Engineering Clean, Resilient Backend Systems</h3>
+            <p class="about-p">
+              I am a results-oriented <strong>.NET Software Engineer</strong> with over 1.5 years of industry experience architecting reliable backend services, microservices, and high-performance relational databases.
+            </p>
+            <p class="about-p">
+              My engineering discipline revolves around <strong>modern C#</strong>, <strong>ASP.NET Core</strong>, and database optimization with <strong>Entity Framework Core</strong> and <strong>SQL Server / PostgreSQL</strong>. I prioritize writing decoupled, maintainable code backed by comprehensive unit and integration test suites.
+            </p>
+
+            <!-- Personal Approach Callout -->
+            <div class="quote-callout">
+              <span class="orange-square">■</span>
+              <span>&ldquo;Clean Architecture is not just theory—it’s how you write systems that stay maintainable as scale and team velocity accelerate.&rdquo;</span>
+            </div>
+
+            <!-- Engineering Focus Tags -->
+            <div class="about-focus-tags">
+              <span class="focus-chip">Distributed Systems</span>
+              <span class="focus-chip">High-Throughput APIs</span>
+              <span class="focus-chip">Cloud Resilience</span>
+              <span class="focus-chip">Performance Profiling</span>
+            </div>
+          </div>
+
+          <!-- Developer Snapshot Card -->
+          <div class="about-snapshot-card interactive-card" data-reveal="fade-left">
+            <h3 class="about-heading">Developer Snapshot</h3>
+            
+            <div class="snapshot-details">
+              <div class="snapshot-row">
+                <span class="snap-label">Role Focus</span>
+                <span class="snap-val">.NET Backend &amp; Microservices</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snap-label">Experience</span>
+                <span class="snap-val">1.5+ Years Production Experience</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snap-label">Primary Languages</span>
+                <span class="snap-val">C# 12, SQL, JavaScript</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snap-label">Primary Framework</span>
+                <span class="snap-val">ASP.NET Core 8 Web API</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snap-label">Architecture</span>
+                <span class="snap-val">Clean Architecture &bull; CQRS &bull; DDD</span>
+              </div>
+              <div class="snapshot-row">
+                <span class="snap-label">Availability</span>
+                <span class="snap-val highlight">Open to Full-Time &bull; Hybrid / Remote</span>
+              </div>
+            </div>
+
+            <div class="snapshot-cta">
+              <a href="#contact" class="btn-primary magnetic-btn" style="width: 100%; justify-content: center;">
+                <span>START A CONVERSATION</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         CAREER PROGRESSION (WORK EXPERIENCE) - VERTICAL TIMELINE
+         ======================================================== -->
+    <section class="section section-experience" id="experience">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>CAREER PROGRESSION</span>
+          </div>
+          <h2 class="section-heading">WORK EXPERIENCE</h2>
+          <p class="section-description">
+            Hands-on production track record delivering enterprise Web APIs, optimizing database latencies, and integrating resilient cloud infrastructure.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline Structure -->
+        <div class="vertical-timeline">
+          
+          <!-- Role 1: Associate Software Engineer -->
+          <div class="timeline-item interactive-card" data-reveal="fade-up">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="exp-period">2024 &mdash; PRESENT</span>
+                  <span class="exp-badge">1.5 YEARS PRODUCTION</span>
+                </div>
+                <h3 class="exp-role-title">Associate Software Engineer (.NET)</h3>
+                <p class="exp-company">TechCorp Solutions &bull; <span class="location">Hybrid / Full-Time</span></p>
+              </div>
+
+              <ul class="exp-points">
+                <li>
+                  <strong>Microservices &amp; API Development:</strong> Designed and implemented 12+ RESTful Web API endpoints using ASP.NET Core 8, adhering to CQRS principles with MediatR and FluentValidation.
+                </li>
+                <li>
+                  <strong>Database Query Optimization:</strong> Profiled SQL Server queries and EF Core execution plans; reduced high-frequency endpoint latency by <strong>35%</strong> using indexed views and <code>AsNoTracking</code> projections.
+                </li>
+                <li>
+                  <strong>Distributed Caching:</strong> Integrated Redis cache layers for product catalogs and user sessions, dropping recurrent database hits by over <strong>50%</strong>.
+                </li>
+                <li>
+                  <strong>Automated Testing:</strong> Authored extensive unit and integration tests using xUnit, Moq, and FluentAssertions, lifting test coverage from 60% to <strong>82%</strong>.
+                </li>
+                <li>
+                  <strong>Docker &amp; CI/CD:</strong> Configured Docker multi-stage containers and automated GitHub Actions pipelines delivering automated builds to Azure App Services.
+                </li>
+              </ul>
+
+              <div class="exp-tags">
+                <span>C# 12</span>
+                <span>ASP.NET Core 8</span>
+                <span>EF Core</span>
+                <span>SQL Server</span>
+                <span>Redis</span>
+                <span>Docker</span>
+                <span>Azure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Junior .NET Developer / Intern -->
+          <div class="timeline-item interactive-card" data-reveal="fade-up">
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="exp-period">EARLIER</span>
+                  <span class="exp-badge">6 MONTHS FELLOWSHIP</span>
+                </div>
+                <h3 class="exp-role-title">Junior .NET Developer / Software Intern</h3>
+                <p class="exp-company">CloudInnovate Labs &bull; <span class="location">On-Site / Full-Time</span></p>
+              </div>
+
+              <ul class="exp-points">
+                <li>Assisted senior developers in migrating legacy .NET Framework 4.8 endpoints to modern .NET 6 Web APIs.</li>
+                <li>Created database migration scripts with EF Core and wrote LINQ queries for financial reporting views.</li>
+                <li>Participated in bi-weekly Agile/Scrum sprints, daily standups, code reviews, and bug resolution tickets.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span>C#</span>
+                <span>.NET 6</span>
+                <span>MSSQL</span>
+                <span>LINQ</span>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Architect Endorsement Card -->
+        <div class="testimonial-card interactive-card" data-reveal="fade-up">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">
+            &ldquo;Working with me has been an incredible experience. Exceptional grasp of Clean Architecture, proactively eliminated high-latency database queries with EF Core profiling, and delivered reliable .NET microservices on tight deadlines.&rdquo;
+          </p>
+          <div class="author-info">
+            <span class="name">Senior Backend Architect</span>
+            <span class="org">Enterprise Cloud Platform</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         EDUCATION & CERTIFICATIONS SECTION (NEW)
+         ======================================================== -->
+    <section class="section section-education" id="education">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>ACADEMIC &amp; CREDENTIALS</span>
+          </div>
+          <h2 class="section-heading">EDUCATION &amp; CERTIFICATIONS</h2>
+          <p class="section-description">
+            Formal computer science foundation complemented by continuous professional learning and verified technical accreditations.
+          </p>
+        </div>
+
+        <div class="edu-cert-grid">
+          
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="sub-col-title">Academic Degree</h3>
+            
+            <div class="edu-card interactive-card" data-reveal="fade-up">
+              <div class="edu-icon-badge">&#127891;</div>
+              <div class="edu-body">
+                <span class="edu-year">2020 &mdash; 2024</span>
+                <h4 class="edu-degree">Bachelor of Technology in Computer Science &amp; Engineering</h4>
+                <p class="edu-institution">State Technical University <span class="edu-note">[Placeholder Institution]</span></p>
+                <p class="edu-desc">
+                  Focused on Data Structures, Relational Database Theory, Distributed Systems, Operating Systems, and Object-Oriented Software Design. Graduated with First Class Honors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="sub-col-title">Professional Certifications</h3>
+
+            <div class="cert-card interactive-card" data-reveal="fade-up" data-reveal-delay="1">
+              <div class="cert-header">
+                <span class="cert-issuer">MICROSOFT</span>
+                <span class="cert-status-badge">VERIFIED</span>
+              </div>
+              <h4 class="cert-name">Microsoft Certified: Azure Fundamentals (AZ-900)</h4>
+              <p class="cert-meta">Cloud architecture concepts, Azure security, governance, and SLA reliability standards.</p>
+              <div class="cert-footer">
+                <span class="cert-id">ID: AZ-900-XXXXX</span>
+                <a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY &nearr;</a>
+              </div>
+            </div>
+
+            <div class="cert-card interactive-card" data-reveal="fade-up" data-reveal-delay="2">
+              <div class="cert-header">
+                <span class="cert-issuer">ENTERPRISE .NET ACADEMY</span>
+                <span class="cert-status-badge">COMPLETED</span>
+              </div>
+              <h4 class="cert-name">Clean Architecture &amp; Domain-Driven Design in .NET</h4>
+              <p class="cert-meta">Enterprise solution structuring, MediatR CQRS pipelines, Result Pattern, and testable domain modeling.</p>
+              <div class="cert-footer">
+                <span class="cert-id">Credential: CAD-NET-8821</span>
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY &nearr;</a>
+              </div>
+            </div>
+
+            <div class="cert-card interactive-card" data-reveal="fade-up" data-reveal-delay="3">
+              <div class="cert-header">
+                <span class="cert-issuer">DISTRIBUTED SYSTEMS INSTITUTE</span>
+                <span class="cert-status-badge">COMPLETED</span>
+              </div>
+              <h4 class="cert-name">Event-Driven Microservices &amp; RabbitMQ Messaging</h4>
+              <p class="cert-meta">Asynchronous bus topologies, outbox persistence, consumer idempotency, and dead-letter queue resilience.</p>
+              <div class="cert-footer">
+                <span class="cert-id">Credential: EDM-RBMQ-4109</span>
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="cert-link">VERIFY &nearr;</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ========================================================
+         CURRENTLY EXPLORING SECTION (NEW)
+         ======================================================== -->
+    <section class="section section-exploring" id="exploring">
+      <div class="container">
+        <div class="section-title-wrap" data-reveal="fade-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>R&amp;D AND CONTINUOUS LEARNING</span>
+          </div>
+          <h2 class="section-heading">CURRENTLY EXPLORING</h2>
+          <p class="section-description">
+            Emerging tools, runtime updates, and architectural patterns I am actively researching and prototyping.
+          </p>
+        </div>
+
+        <div class="exploring-cards-grid">
+          
+          <div class="exploring-card interactive-card" data-reveal="fade-up" data-reveal-delay="1">
+            <div class="exp-icon-box">&#9889;</div>
+            <h3 class="exploring-title">.NET 9 &amp; C# 13</h3>
+            <p class="exploring-desc">Investigating Ahead-of-Time (Native AOT) compilation enhancements, new collection expression capabilities, and LINQ performance boosts.</p>
+            <span class="exploring-status-tag">Runtime Exploration</span>
+          </div>
+
+          <div class="exploring-card interactive-card" data-reveal="fade-up" data-reveal-delay="2">
+            <div class="exp-icon-box">&#127760;</div>
+            <h3 class="exploring-title">.NET Aspire</h3>
+            <p class="exploring-desc">Prototyping cloud-native distributed application orchestration, standardized telemetry dashboards, and multi-container service discovery.</p>
+            <span class="exploring-status-tag">Architecture Pattern</span>
+          </div>
+
+          <div class="exploring-card interactive-card" data-reveal="fade-up" data-reveal-delay="3">
+            <div class="exp-icon-box">&#128366;</div>
+            <h3 class="exploring-title">MassTransit &amp; Sagas</h3>
+            <p class="exploring-desc">Deepening knowledge of complex choreography-based and orchestration-based state machines with event-driven message brokers.</p>
+            <span class="exploring-status-tag">Distributed Systems</span>
+          </div>
+
+          <div class="exploring-card interactive-card" data-reveal="fade-up" data-reveal-delay="4">
+            <div class="exp-icon-box">&#129302;</div>
+            <h3 class="exploring-title">AI via Semantic Kernel</h3>
+            <p class="exploring-desc">Integrating Microsoft Semantic Kernel into ASP.NET Core APIs for retrieval-augmented generation (RAG) and intelligent backend automation.</p>
+            <span class="exploring-status-tag">AI Engineering</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         CONTACT SECTION (PROFESSIONAL & VALIDATED)
+         ======================================================== -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        
+        <div class="contact-banner interactive-card" data-reveal="scale-up">
+          <div class="section-badge">
+            <span class="orange-square">■</span>
+            <span>GET IN TOUCH</span>
+          </div>
+
+          <h2 class="contact-headline">
+            HAVE A ROLE OR PROJECT IN MIND?<br />
+            LET'S TALK.
+          </h2>
+
+          <p class="contact-sub">
+            Whether you are hiring for an Associate / Mid-level .NET Software Engineer position, need high-throughput Web API design, or want to review code, I look forward to speaking with you.
+          </p>
+
+          <!-- Copyable Email Bar -->
+          <div class="email-copy-bar">
+            <span class="email-label">DIRECT EMAIL:</span>
+            <span class="email-val" id="email-address">saipavan7536@gmail.com</span>
+            <button type="button" class="btn-copy-email magnetic-btn" onclick="copyEmailToClipboard()" title="Copy email address" aria-label="Copy Email">
+              <span id="copy-btn-text">COPY</span>
+            </button>
+          </div>
+
+          <!-- Social and Resume Pills -->
+          <div class="contact-social-pills">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="social-pill magnetic-btn">
+              <span>LINKEDIN &nearr;</span>
+            </a>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-pill magnetic-btn">
+              <span>GITHUB &nearr;</span>
+            </a>
+            <button type="button" onclick="openResumeModal()" class="social-pill magnetic-btn">
+              <span>VIEW RESUME &nearr;</span>
+            </button>
+          </div>
+
+          <!-- Professional Contact Form with Validation -->
+          <div class="contact-form-wrap">
+            <form id="portfolio-contact-form" class="portix-form" onsubmit="handleContactSubmit(event)" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">YOUR FULL NAME <span class="req">*</span></label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name" />
+                  <span class="field-error-msg" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">YOUR EMAIL ADDRESS <span class="req">*</span></label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. alex@company.com" required autocomplete="email" />
+                  <span class="field-error-msg" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">SUBJECT</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="e.g. .NET Software Engineer Role / Project Inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">MESSAGE <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Share project details, job scope, or scheduling dates..." required></textarea>
+                <span class="field-error-msg" id="message-error"></span>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn-submit magnetic-btn" id="form-submit-btn">
+                  <span>SEND MESSAGE</span>
+                  <span class="arrow">&rarr;</span>
+                </button>
+                <span class="form-note">Guaranteed response within 24 business hours.</span>
+              </div>
+
+              <!-- Form Response Feedback Message -->
+              <div id="form-feedback" class="form-feedback" style="display: none;" role="status"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       PORTIX FOOTER
+       ======================================================== -->
+  <!-- ========================================================
+       PORTIX FOOTER (PREMIUM ARCHITECTURAL HUB)
+       ======================================================== -->
+  <footer class="portix-footer" id="footer">
+    <div class="container footer-container">
+
+      <!-- Top Row: Main Brand, Navigation & Action Grid -->
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand, Tagline, Availability & Socials -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo" aria-label="Pavan Portfolio">
+            <span class="logo-text">PAVAN</span>
+            <span class="logo-dot"></span>
+          </a>
+          
+          <p class="footer-tagline">
+            Associate / Mid-level <strong>.NET Backend Engineer</strong> crafting high-throughput ASP.NET Core 8 Web APIs, resilient microservices, and scalable cloud architectures.
+          </p>
+
+          <!-- Live Availability Status Pill -->
+          <div class="footer-status-pill">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span class="status-text">Available for Full-Time Roles &amp; High-Impact Projects</span>
+          </div>
+
+          <!-- Social Connectivity Links -->
+          <div class="footer-social-row">
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="footer-social-link magnetic-btn" title="GitHub Profile" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="footer-social-link magnetic-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:saipavan7536@gmail.com" class="footer-social-link magnetic-btn" title="Send Email" aria-label="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: In-Page Navigation -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">
+            <span class="orange-square">■</span>
+            <span>EXPLORE</span>
+          </h4>
+          <ul class="footer-nav-list">
+            <li><a href="#works" class="footer-nav-item"><span>SELECTED WORKS</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#skills" class="footer-nav-item"><span>TECHNICAL ARSENAL</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#about" class="footer-nav-item"><span>ABOUT &amp; PHILOSOPHY</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#experience" class="footer-nav-item"><span>CAREER PROGRESSION</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#education" class="footer-nav-item"><span>EDUCATION &amp; CERTS</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#exploring" class="footer-nav-item"><span>CURRENTLY EXPLORING</span> <span class="nav-arrow">&rarr;</span></a></li>
+            <li><a href="#contact" class="footer-nav-item"><span>GET IN TOUCH</span> <span class="nav-arrow">&rarr;</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Quick Action Card & Back-to-Top -->
+        <div class="footer-action-col">
+          <div class="footer-cta-card interactive-card">
+            <h4 class="footer-cta-heading">LET'S BUILD RESILIENT SYSTEMS</h4>
+            <p class="footer-cta-desc">
+              Looking for a dependable .NET engineer who writes clean, testable code and thinks in microservices?
+            </p>
+            <div class="footer-cta-buttons">
+              <a href="#contact" class="btn-card-primary magnetic-btn">
+                <span>LET'S TALK</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+              <button type="button" onclick="openResumeModal()" class="btn-card-ghost magnetic-btn">
+                <span>VIEW RESUME &nearr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Elevated Back-to-Top Button -->
+          <a href="#hero" class="footer-back-to-top magnetic-btn" aria-label="Back to Top of Page">
+            <div class="btt-icon-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </div>
+            <span>BACK TO TOP</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Hairline Gradient Divider -->
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <!-- Bottom Colophon / Metadata Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-left">
+          <span class="footer-copyright">&copy; <span id="current-year"></span> <strong>Sai Pavan</strong>. All rights reserved.</span>
+        </div>
+
+        <div class="footer-bottom-center">
+          <span class="footer-architecture-badge">
+            <span class="badge-dot"></span>
+            ASP.NET Core 8 &bull; Clean Architecture Mindset
+          </span>
+        </div>
+
+        <div class="footer-bottom-right">
+          <span class="footer-standards-text">Obsidian &amp; Terracotta Theme &bull; Zero Frameworks</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       PROJECT ARCHITECTURE DEEP-DIVE MODAL (COMPREHENSIVE)
+       ======================================================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Close project modal">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamically populated via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       RESUME QUICK-VIEW & PRINT MODAL
+       ======================================================== -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true">
+    <div class="modal-dialog resume-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+      <button class="modal-close" onclick="closeResumeModal()" aria-label="Close resume modal">&times;</button>
+      
+      <div class="resume-modal-header">
+        <div>
+          <h3 id="modal-resume-title">SAI PAVAN</h3>
+          <p class="resume-subheading">.NET Software Engineer &bull; 1.5+ Years Production Experience</p>
+        </div>
+        <div class="resume-quick-contact">
+          <span>saipavan7536@gmail.com</span>
+          <span>github.com/your-username</span>
+        </div>
+      </div>
+
+      <div class="resume-modal-body">
+        
+        <!-- Summary -->
+        <div class="resume-doc-section">
+          <h4 class="resume-doc-heading">EXECUTIVE PROFILE</h4>
+          <p>
+            Results-driven .NET Software Engineer with 1.5+ years of hands-on production experience architecting distributed enterprise microservices, RESTful Web APIs, and high-performance relational databases. Proficient in Clean Architecture, CQRS (MediatR), Entity Framework Core, Redis distributed caching, and Docker containerization on Azure. Passionate about decoupled, resilient, and test-driven software engineering.
+          </p>
+        </div>
+
+        <!-- Technical Proficiencies -->
+        <div class="resume-doc-section">
+          <h4 class="resume-doc-heading">CORE TECHNICAL PROFICIENCIES</h4>
+          <div class="resume-skills-block">
+            <p><strong>Languages:</strong> C# 12, SQL (T-SQL, PostgreSQL), TypeScript, JavaScript</p>
+            <p><strong>Frameworks &amp; APIs:</strong> ASP.NET Core 8, Minimal APIs, EF Core, Dapper, SignalR, MediatR, Hangfire</p>
+            <p><strong>Architecture &amp; Patterns:</strong> Clean Architecture, Domain-Driven Design (DDD), CQRS, Result Pattern, SOLID</p>
+            <p><strong>Databases &amp; Cloud:</strong> Microsoft SQL Server, PostgreSQL, Redis, Microsoft Azure, Docker, GitHub Actions</p>
+            <p><strong>Testing &amp; Tools:</strong> xUnit, Moq, FluentAssertions, Visual Studio 2022, Postman, Git</p>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="resume-doc-section">
+          <h4 class="resume-doc-heading">PROFESSIONAL EXPERIENCE</h4>
+          
+          <div class="resume-job">
+            <div class="job-header">
+              <span class="job-title">Associate Software Engineer (.NET) &bull; TechCorp Solutions</span>
+              <span class="job-dates">2024 &mdash; Present</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Designed and shipped 12+ RESTful Web APIs in ASP.NET Core 8 using MediatR CQRS and FluentValidation.</li>
+              <li>Profiled and indexed SQL Server queries, dropping high-traffic endpoint latency by 35%.</li>
+              <li>Integrated Redis cache layers for product catalogs, reducing recurring database hits by over 50%.</li>
+              <li>Authored xUnit and Moq automated tests, increasing test coverage from 60% to 82%.</li>
+              <li>Built multi-stage Dockerfiles and automated CI/CD pipelines deploying to Azure App Services.</li>
+            </ul>
+          </div>
+
+          <div class="resume-job">
+            <div class="job-header">
+              <span class="job-title">Junior .NET Developer Intern &bull; CloudInnovate Labs</span>
+              <span class="job-dates">Earlier &bull; 6 Months</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Assisted in migrating legacy .NET Framework 4.8 endpoints to modern .NET 6 Web APIs.</li>
+              <li>Authored EF Core database migrations and complex LINQ reporting view queries.</li>
+              <li>Participated in daily Agile standups, code reviews, and defect triage.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="resume-doc-section">
+          <h4 class="resume-doc-heading">EDUCATION &amp; CERTIFICATIONS</h4>
+          <p><strong>Bachelor of Technology in Computer Science &amp; Engineering</strong> &mdash; 2020 &ndash; 2024</p>
+          <p><strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong> &mdash; 2024</p>
+          <p><strong>Clean Architecture &amp; DDD in .NET</strong> &mdash; Enterprise .NET Academy</p>
+        </div>
+
+        <!-- Modal Actions Bar -->
+        <div class="resume-actions-bar">
+          <a href="assets/Sai_Pavan_Resume.pdf" download="Sai_Pavan_Resume.pdf" class="btn-card-primary magnetic-btn" id="resume-download-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            <span>DOWNLOAD PDF</span>
+          </a>
+          <button type="button" class="btn-card-secondary magnetic-btn" onclick="printResume()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            <span>PRINT / SAVE AS PDF</span>
+          </button>
+          <button type="button" class="btn-card-ghost" onclick="closeResumeModal()">CLOSE</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-message" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
